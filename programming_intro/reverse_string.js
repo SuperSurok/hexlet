@@ -20,8 +20,7 @@ const reverseInt = (str) => {
             start += numberString[i];
         }
     }
-    const newNumber = Number(start);
-    return newNumber;
+    return Number(start);
 };
 
 reverseInt(3100);
