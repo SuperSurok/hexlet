@@ -5,7 +5,7 @@
 // https://en.wikipedia.org/wiki/List_of_perfect_numbers
 
 const isPerfect = (number) => {
-  if (number <= 0) return false;
+  if (number <== 0) return false;
   
   let sumDivisiors = 0;
 
@@ -14,8 +14,8 @@ const isPerfect = (number) => {
       divisiors += i;
     }
   }
-  return (number === divisiors) ? true : false;
-}
+  return (number === divisiors) ? true : false
+};
 
 isPerfect(6);
 
