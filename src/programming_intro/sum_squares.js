@@ -4,18 +4,16 @@
 // Напишите функцию sumSquareDifference, которая принимает аргумент n и возвращает разницу между квадратом суммы и суммой квадратов первых n натуральных чисел.
 
 const sumSquareDifference = (number) => {
-    const toString = String(number);
     let counter = 0;
     let sumSquare = 0;
-    let squareSum = 0;
-    let difference = 0;
+    let squareSum;
     for (let i = 1; i <= number; i += 1) {
         sumSquare += i ** 2;
         counter += i
     }
     squareSum = counter ** 2;
-    return differnce = squareSum - sumSquare;
-}
+    return squareSum - sumSquare;
+};
 
 sumSquareDifference(10);
 
@@ -43,5 +41,7 @@ const squareOfSum = (n) => {
   return sum * sum;
 };
 
-const sumSquareDifference = n =>
+const sumSquareDifference_2 = n =>
   squareOfSum(n) - sumOfSquares(n);
+
+sumSquareDifference_2(10);
