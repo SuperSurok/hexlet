@@ -14,14 +14,14 @@ console.log(sumOfPairs(pair1, pair2)); // (104, 10)
 
 
 // Найти пару без вложенных пар
-const pair3 = cons(
-    null,
-    cons('one', 'two'),
-);
-findPrimitiveBox(pair3); // ('one', 'two')
-
-const pair4 = cons(
-    cons(null, cons(1, 5)),
-    null,
-);
-findPrimitiveBox(pair4); // (1, 5)
+// const pair3 = cons(
+//     null,
+//     cons('one', 'two'),
+// );
+// findPrimitiveBox(pair3); // ('one', 'two')
+//
+// const pair4 = cons(
+//     cons(null, cons(1, 5)),
+//     null,
+// );
+// findPrimitiveBox(pair4); // (1, 5)
