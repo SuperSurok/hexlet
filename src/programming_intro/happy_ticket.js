@@ -19,7 +19,7 @@
 
 // 'welcome'.length; // 7
 
-const isHappyTricket = (ticket) => {
+const isHappyTicket = (ticket) => {
   const ticketString = String(ticket);
   let firstHalfTicket = 0;
   let secondHalfTicket = 0;
@@ -31,15 +31,15 @@ const isHappyTricket = (ticket) => {
   }
 
   return (firstHalfTicket === secondHalfTicket) ? true : false
-}
-isHappyTricket('385916');
-isHappyTricket('000001');
+};
+isHappyTicket('385916');
+isHappyTicket('000001');
 
 ////////////////////////////////////////////////
 //////////// Second Solution ///////////////////
 ////////////////////////////////////////////////
 
-const isHappyTricket = (_num) => {
+const isHappyTicket_2 = (_num) => {
   const num = String(_num);
   let balance = 0;
 
@@ -49,3 +49,4 @@ const isHappyTricket = (_num) => {
   return balance === 0;
 };
 
+isHappyTicket_2('000001');
