@@ -30,8 +30,7 @@ const sumOfSquareDigits = (num) => {
 const isHappyNumber = (num) => {
     let number = num;
     for (let i = 0; i < 10; i += 1) {
-        const digit = sumOfSquareDigits(number);
-        number = digit;
+        number = sumOfSquareDigits(number);
     }
     return number === 1;
 };
