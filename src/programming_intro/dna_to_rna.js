@@ -44,7 +44,7 @@ dnaToRna('ACGTGGTCTTAA'); // 'UGCACCAGAAUU'
 //////////// Second Solution ////////////
 //////////////////////////////////////////
 
-const dnaToRna = (str) => {
+const dnaToRna_2 = (str) => {
   if (str === '') return '';
   let newString = '';
   for (let i = 0; i < str.length; i += 1) {

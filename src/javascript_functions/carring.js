@@ -43,5 +43,5 @@ const True_2 = arg1 => () => arg1;
 const False_2 = () => arg2 => arg2;
 const If_2 = fn => fn;
 
-const ConditionFunction = If_2(False_2);
+const ConditionFunction_2 = If_2(False_2);
 ConditionFunction_2('one')('two');
