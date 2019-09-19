@@ -1,10 +1,8 @@
 ///////////////////////////////////////
 ///// The Very First Solution /////////
 ///////////////////////////////////////
-
 {
     const smallestDivisor = (num) => {
-        // BEGIN (write your solution here)
         function process(num, divisor) {
             if (num === 1) {
                 return 1;
@@ -20,8 +18,8 @@
                 }
             }
         }
+
         return process(num, 2);
-        // END
     };
 }
 ///////////////////////////////////////
@@ -29,23 +27,19 @@
 ///////////////////////////////////////
 {
     const smallestDivisor = (num) => {
-        // BEGIN (write your solution here)
         const iter = (number, acc) => {
             if (num === 1) return num;
             if (number % acc === 0 || number === acc) return acc;
             return iter(number, acc + 1);
         };
         return iter(num, 2);
-        // END
     };
 }
-
 ///////////////////////////////////////
 ///// Master Solution /////////////////
 ///////////////////////////////////////
 {
     const smallestDivisor = (num) => {
-        // BEGIN
         // Visualize Execution: https://goo.gl/Mc68MA
         const iter = (acc) => {
             // We use 'num / 2' in the condition below, and not 'num'.
@@ -59,9 +53,6 @@
             }
             return iter(acc + 1);
         };
-
         return iter(2);
-        // END
     };
-
 }
