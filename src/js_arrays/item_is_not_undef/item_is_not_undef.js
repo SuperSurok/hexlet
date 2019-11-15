@@ -1,0 +1,19 @@
+////////////////////////////////////////
+//////// First Solution ////////////////
+////////////////////////////////////////
+{
+    const get = (arr, index, a = null) => (arr[index] !== undefined) ? arr[index] : a;
+}
+
+////////////////////////////////////////
+//////// Master Solution ////////////////
+////////////////////////////////////////
+{
+    const get = (arr, index, defaultValue = null) => {
+        if (arr[index] === undefined) {
+            return defaultValue;
+        }
+
+        return arr[index];
+    };
+}
