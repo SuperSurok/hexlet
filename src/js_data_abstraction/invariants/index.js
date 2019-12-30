@@ -95,9 +95,11 @@
 
     const sub = (ratNum1, ratNum2) => {
         makeRational(
-          getNumer(ratNum1) * getDenom(ratNum2) + getNumer(ratNum2) * getNumer(ratNum1),
+          getNumer(ratNum1) * getDenom(ratNum2) - getNumer(ratNum2) * getNumer(ratNum1),
           getDenom(ratNum1) * getDenom(ratNum2),
         )
     };
+
+    const ratToString = (rat) => `${getNumer(rat)}/${getDenom(rat)}`;
 }
 
