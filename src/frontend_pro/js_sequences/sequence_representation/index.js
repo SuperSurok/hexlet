@@ -27,5 +27,5 @@ export const concat = (l1, l2) => {
         return l2;
     } else {
         return cons(head(l1), concat(tail(l1), l2));
-    };
-}
+    }
+};
