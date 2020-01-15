@@ -2,7 +2,7 @@ const getJsonFileData = () => (
   {
     common: {
       files: [
-        "src/objects.js",
+        "src/js_objects.js",
       ],
     },
     config: {
