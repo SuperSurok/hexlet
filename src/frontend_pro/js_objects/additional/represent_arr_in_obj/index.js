@@ -1,0 +1,40 @@
+//////////////////////////////////////////////////////
+///////////////// First Solution /////////////////////
+//////////////////////////////////////////////////////
+{
+    const fromPairs = (list) => {
+        const result = {};
+        for (const item of list) {
+            result[item[0]] = item[1];
+        }
+        return result;
+    };
+}
+
+//////////////////////////////////////////////////////
+///////////////// Second Solution ////////////////////
+//////////////////////////////////////////////////////
+{
+    const fromPairs = (list) => {
+        const result = {};
+        for (const [key, value] of list) {
+            result[key] = value;
+        }
+        return result;
+    };
+}
+
+//////////////////////////////////////////////////////
+///////////////// Master Solution ////////////////////
+//////////////////////////////////////////////////////
+{
+    const fromPairs = (data) => {
+        const result = {};
+
+        for (const [key, value] of data) {
+            result[key] = value;
+        }
+
+        return result;
+    };
+}
