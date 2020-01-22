@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "babel.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
     "@babel/core": "^7.5.0",
