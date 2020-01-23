@@ -39,7 +39,6 @@
 ////////////////////////////////////////
 {
     const run = (text) => {
-        // BEGIN
         const takeLast = (str, length) => {
             if (str === '' || str.length < length) {
                 return null;
@@ -49,11 +48,8 @@
             for (let i = str.length - 1; result.length < length; i -= 1) {
                 result = `${result}${str[i]}`;
             }
-K
             return result;
         };
-        // END
-
         return takeLast(text, 4);
     };
 }
