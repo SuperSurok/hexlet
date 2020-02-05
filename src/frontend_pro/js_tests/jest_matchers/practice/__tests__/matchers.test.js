@@ -1,19 +1,20 @@
 const getFunction = require('../functions');
-const without = getFunction();
+const gt = getFunction();
 
 //////////////////////////////////////////////////////
 ///////////////// Solution ///////////////////////////
 //////////////////////////////////////////////////////
-test('without', () => {
-  expect(without([], 1, 2)).toEqual([]);
-  expect(without([2, 1, 2, 3], 1, 2)).toEqual([3]);
-  expect(without([2, 1, 2, 3], 1, 3)).not.toBe([3]);
+test('gt', () => {
+    expect(gt(3, 1)).toBeTruthy();
+    expect(gt(3, 3)).toBeFalsy();
+    expect(gt(1, 3)).toBeFalsy();
 });
 
 //////////////////////////////////////////////////////
 ///////////////// Master Solution ////////////////////
 //////////////////////////////////////////////////////
-test('without_master', () => {
-  expect(without([], 3)).toEqual([]);
-  expect(without([3, 8, 9, 8, 10], 8, 10)).toEqual([3, 9]);
+test('gt_master', () => {
+    expect(gt(0, 0)).toBe(false);
+    expect(gt(1, 0)).toBe(true);
+    expect(gt(1, -3)).toBe(true);
 });
