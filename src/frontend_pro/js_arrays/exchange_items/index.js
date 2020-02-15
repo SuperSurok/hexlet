@@ -21,6 +21,25 @@
 }
 
 ////////////////////////////////////////
+//////// Second Solution ///////////////
+////////////////////////////////////////
+{
+    const swap = (arr, index) => {
+        const size = arr.length;
+        if (index === arr.length - 1 || index === 0) return arr;
+        for (let i = 0; i < size; i += 1) {
+            const first = index - 1;
+            if (i === index) {
+                const second = arr[index + 1];
+                arr[i + 1] = arr[first];
+                arr[first] = second;
+            }
+        }
+        return arr;
+    };
+}
+
+////////////////////////////////////////
 //////// Master Solution ///////////////
 ////////////////////////////////////////
 
