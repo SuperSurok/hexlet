@@ -35,9 +35,9 @@
     const calculateSum = (arr) => {
         if (arr.length === 0) return null;
         let sum = 0;
-        for (const num in arr) {
+        for (const num of arr) {
             if (arr[num] % 3 === 0) {
-                sum += arr[num];
+                sum += num;
             }
         }
         return sum;

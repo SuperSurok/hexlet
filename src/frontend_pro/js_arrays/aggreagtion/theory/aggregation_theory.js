@@ -14,7 +14,7 @@ const getMax = (arr) => {
 // get sum
 const getSum = (arr) => {
     let sum = 0;
-    for (const num in arr) {
+    for (const num of arr) {
         sum += arr[num];
     }
     return sum;
