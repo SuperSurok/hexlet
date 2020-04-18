@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const GetCard = ({title = 'Some Title', text = 'Some Text'}) => {
+const GetCard = ({title, text}) => {
     const scholarSolutionTitle = <h4 className="card-title">Scholar Solution</h4>
     if (title || text) {
         return (
@@ -13,6 +13,7 @@ const GetCard = ({title = 'Some Title', text = 'Some Text'}) => {
             </div>
         )
     }
+    return null;
 }
 
 //////////////////////////////////////////////////////
