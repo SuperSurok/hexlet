@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const GetCard = ({title, text}) => {
+const GetCard = ({title = 'Scholar Title', text = 'Scholar Text'}) => {
     const scholarSolutionTitle = <h4 className="card-title">Scholar Solution</h4>
     if (title || text) {
         return (

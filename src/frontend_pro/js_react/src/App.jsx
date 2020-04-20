@@ -14,6 +14,8 @@ class App extends React.Component {
                 <Card />
                 <Jsx />
                 <PropsLesson
+                    scholarSolutionTitle={scholarSolutionTitle}
+                    masterSolutionTitle={masterSolutionTitle}
                     titlePropsLesson={titlePropsLesson}
                     textPropsLesson={textPropsLesson}
                 />
