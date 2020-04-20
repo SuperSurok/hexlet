@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 
 class GetCardProps extends Component {
     render() {
-        const {titlePropsLesson, textPropsLesson} = this.props;
-        const scholarSolutionTitle = <h4 className="card-title">Scholar Solution</h4>
+        const {titlePropsLesson, textPropsLesson, scholarSolutionTitle} = this.props;
         return (
             <div className='card'>
                 <div className="card-header">{scholarSolutionTitle}</div>
@@ -18,8 +17,7 @@ class GetCardProps extends Component {
 
 class GetCardPropsMaster extends Component {
     render() {
-        const {titlePropsLesson, textPropsLesson} = this.props;
-        const masterSolutionTitle = <h4 className="card-title">Master Solution</h4>
+        const {titlePropsLesson, textPropsLesson, masterSolutionTitle} = this.props;
         return (
             <div>
                 <div className='card'>
@@ -36,18 +34,22 @@ class GetCardPropsMaster extends Component {
 
 class PropsLesson extends Component {
     render() {
-        const {titlePropsLesson, textPropsLesson} = this.props;
+        const {titlePropsLesson, textPropsLesson, scholarSolutionTitle, masterSolutionTitle} = this.props;
         return (
             <div className="container-fluid">
                 <div className="row justify-content-center">
                     <h3 className="mt-3">Props Lesson</h3>
                 </div>
                 <div className="row">
-                    <div className="col-6"><GetCardProps
+                    <div className="col-6">
+                        <GetCardProps
+                        scholarSolutionTitle={scholarSolutionTitle}
                         titlePropsLesson={titlePropsLesson}
                         textPropsLesson={textPropsLesson}/>
                     </div>
-                    <div className="col-6"><GetCardPropsMaster
+                    <div className="col-6">
+                        <GetCardPropsMaster
+                        masterSolutionTitle={masterSolutionTitle}
                         titlePropsLesson={titlePropsLesson}
                         textPropsLesson={textPropsLesson}/>
                     </div>
