@@ -3,6 +3,7 @@ import Card from './practice/components/Card';
 import Jsx from './practice/jsx/Jsx';
 import PropsLesson from "./practice/props/Props";
 import Collections from "./practice/collections/Collections";
+import Progress from "./practice/differences_jsx_html/Progress";
 class App extends React.Component {
     render() {
         const titlePropsLesson = 'Title Props Lesson';
@@ -20,6 +21,10 @@ class App extends React.Component {
                     textPropsLesson={textPropsLesson}
                 />
                 <Collections
+                    scholarSolutionTitle={scholarSolutionTitle}
+                    masterSolutionTitle={masterSolutionTitle}
+                />
+                <Progress
                     scholarSolutionTitle={scholarSolutionTitle}
                     masterSolutionTitle={masterSolutionTitle}
                 />
