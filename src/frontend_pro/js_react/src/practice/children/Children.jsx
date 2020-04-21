@@ -23,6 +23,9 @@ class Children extends Component {
         )
         return (
             <div className="container border rounded mt-3 p-3">
+                <div className="row justify-content-center">
+                    <h3 className="title">State Lesson</h3>
+                </div>
                 {domScholar}
                 {domMaster}
             </div>
