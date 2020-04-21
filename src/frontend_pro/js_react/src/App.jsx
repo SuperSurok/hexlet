@@ -4,6 +4,8 @@ import Jsx from './practice/jsx/Jsx';
 import PropsLesson from "./practice/props/Props";
 import Collections from "./practice/collections/Collections";
 import Progress from "./practice/differences_jsx_html/Progress";
+import ClassNames from "./practice/classnames/ClassNames";
+
 class App extends React.Component {
     render() {
         const titlePropsLesson = 'Title Props Lesson';
@@ -25,6 +27,10 @@ class App extends React.Component {
                     masterSolutionTitle={masterSolutionTitle}
                 />
                 <Progress
+                    scholarSolutionTitle={scholarSolutionTitle}
+                    masterSolutionTitle={masterSolutionTitle}
+                />
+                <ClassNames
                     scholarSolutionTitle={scholarSolutionTitle}
                     masterSolutionTitle={masterSolutionTitle}
                 />
