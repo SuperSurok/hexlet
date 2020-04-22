@@ -1,11 +1,12 @@
 import React from 'react';
-import Card from './practice/components/Card';
-import Jsx from './practice/jsx/Jsx';
-import PropsLesson from "./practice/props/Props";
-import Collections from "./practice/collections/Collections";
-import Progress from "./practice/differences_jsx_html/Progress";
-import ClassNames from "./practice/classnames/ClassNames";
-import Children from "./practice/children/Children";
+import Card from './components/Card';
+import Jsx from './jsx/Jsx';
+import PropsLesson from "./props/Props";
+import Collections from "./collections/Collections";
+import Progress from "./differences_jsx_html/Progress";
+import ClassNames from "./classnames/ClassNames";
+import Children from "./children/Children";
+import TwoCounters from "./state/theory/TwoCounters";
 
 class App extends React.Component {
     render() {
@@ -36,6 +37,7 @@ class App extends React.Component {
                     masterSolutionTitle={masterSolutionTitle}
                 />
                 <Children />
+                <TwoCounters />
             </div>
         );
     }
