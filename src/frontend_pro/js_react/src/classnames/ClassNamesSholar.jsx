@@ -10,7 +10,7 @@ class ClassNamesScholar extends Component {
         })
         return(
             <div className="row">
-                <h3 className="title ml-3">{scholarSolutionTitle}</h3>
+                <div className="ml-3">{scholarSolutionTitle}</div>
                 <div className="col-12">
                     <div className={data} role="alert">{text}</div>
                 </div>
