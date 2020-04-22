@@ -7,6 +7,7 @@ import Progress from "./differences_jsx_html/Progress";
 import ClassNames from "./classnames/ClassNames";
 import Children from "./children/Children";
 import IndexState from "./state/index";
+import Carousel from "./events/Carousel";
 
 class App extends React.Component {
     render() {
@@ -41,6 +42,7 @@ class App extends React.Component {
                 />
                 <Children />
                 <IndexState />
+                <Carousel />
             </div>
         );
     }
