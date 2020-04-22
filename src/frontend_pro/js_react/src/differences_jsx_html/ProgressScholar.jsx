@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 class ProgressScholar extends Component {
     render() {
-        const {percentage, scholarSolutionTitle} = this.props;
+        const {percentage} = this.props;
         const progressBarStyle = {
             width: `${percentage}%`,
         };

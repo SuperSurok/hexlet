@@ -1,11 +1,13 @@
 import React from 'react';
-import Card from './practice/components/Card';
-import Jsx from './practice/jsx/Jsx';
-import PropsLesson from "./practice/props/Props";
-import Collections from "./practice/collections/Collections";
-import Progress from "./practice/differences_jsx_html/Progress";
-import ClassNames from "./practice/classnames/ClassNames";
-import Children from "./practice/children/Children";
+import Card from './components/Card';
+import Jsx from './jsx/Jsx';
+import PropsLesson from "./props/Props";
+import Collections from "./collections/Collections";
+import Progress from "./differences_jsx_html/Progress";
+import ClassNames from "./classnames/ClassNames";
+import Children from "./children/Children";
+import IndexState from "./state/index";
+import Carousel from "./events/Carousel";
 
 class App extends React.Component {
     render() {
@@ -15,6 +17,9 @@ class App extends React.Component {
         const masterSolutionTitle = <h4 className="card-title">Master Solution</h4>
         return (
             <div className='container'>
+                <div className="row col-12 p-4 justify-content-center">
+                    <h3 className="title">JS React Course</h3>
+                </div>
                 <Card/>
                 <Jsx/>
                 <PropsLesson
@@ -36,6 +41,8 @@ class App extends React.Component {
                     masterSolutionTitle={masterSolutionTitle}
                 />
                 <Children />
+                <IndexState />
+                <Carousel />
             </div>
         );
     }
