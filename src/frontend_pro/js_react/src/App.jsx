@@ -6,7 +6,7 @@ import Collections from "./collections/Collections";
 import Progress from "./differences_jsx_html/Progress";
 import ClassNames from "./classnames/ClassNames";
 import Children from "./children/Children";
-import TwoCounters from "./state/theory/TwoCounters";
+import IndexState from "./state/index";
 
 class App extends React.Component {
     render() {
@@ -16,6 +16,9 @@ class App extends React.Component {
         const masterSolutionTitle = <h4 className="card-title">Master Solution</h4>
         return (
             <div className='container'>
+                <div className="row col-12 p-4 justify-content-center">
+                    <h3 className="title">JS React Course</h3>
+                </div>
                 <Card/>
                 <Jsx/>
                 <PropsLesson
@@ -37,7 +40,7 @@ class App extends React.Component {
                     masterSolutionTitle={masterSolutionTitle}
                 />
                 <Children />
-                <TwoCounters />
+                <IndexState />
             </div>
         );
     }

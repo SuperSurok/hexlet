@@ -31,15 +31,19 @@ class Buttons extends Component {
             'btn-primary': this.state.primary,
         })
         return (
-            <div>
+            <div className="row col-12">
                 <button
-                    className="btn btn-primary m-3"
+                    className="btn btn-primary"
                     onClick={this.onIncrement}
-                >count: {count}</button>
+                >
+                    count: {count}
+                </button>
                 <button
                     className={buttonClass}
                     onClick={this.onChangeClass}
-                >button</button>
+                >
+                    button
+                </button>
             </div>
         );
     }
