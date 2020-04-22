@@ -43,7 +43,7 @@ class BtnGroupScholar extends Component {
     return (
       <div className="row">
         <div className="col-12">
-          <h4 className="title">Master Solution</h4>
+          <h4 className="title">Scholar Solution</h4>
         </div>
           <div className="col-12">
               <div className="btn-group" role="group">
