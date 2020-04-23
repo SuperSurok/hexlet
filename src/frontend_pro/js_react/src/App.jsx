@@ -9,6 +9,7 @@ import Children from "./children/Children";
 import IndexState from "./state/index";
 import Carousel from "./events/Carousel";
 import AProgramming from "./automatic_programming/Collapse";
+import Forms from "./forms/Forms";
 
 class App extends React.Component {
   render() {
@@ -47,6 +48,7 @@ class App extends React.Component {
         <IndexState />
         <Carousel />
         <AProgramming />
+        <Forms/>
       </div>
     );
   }
