@@ -37,7 +37,7 @@ class CarouselMaster extends Component {
       });
       return (
         <div key={key} className={classes}>
-          <img src={`/static/media${url}`} className="d-block w-100" alt="" />
+          <img src={`${url}`} className="d-block w-100" alt="" />
         </div>
       );
     });

@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import CarouselScholar from "./CarouselScholar";
 import CarouselMaster from "./CarouselMaster";
+import first from "./images/first.jpeg";
+import second from "./images/second.jpeg";
+import third from "./images/third.jpeg";
 
 const images = [
-  "/images/first.jpeg",
-  "/images/second.jpeg",
-  "/images/third.jpeg",
+  first,
+  second,
+  third,
 ];
 
 class Carousel extends Component {
