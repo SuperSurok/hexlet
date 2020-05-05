@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import FormTheory from "./theory/FormTheory";
 import TextArea from "./theory/TextArea";
 import DropDownList from "./theory/DropDownList";
+import MyFormScholar from "./practice/MyFormScholar";
+import MyFormMaster from "./practice/MyFormMaster";
 
 class Forms extends Component {
   render() {
@@ -13,7 +15,11 @@ class Forms extends Component {
         <FormTheory text={text} />
         <TextArea text={text} />
         <DropDownList />
-        <h4 className="title ml-3 mt-3">Form Practice</h4>
+        <h4 className="title row justify-content-center">Form Practice</h4>
+        <h4 className="title">Scholar Solution</h4>
+          <div className="p-3 border rounded"><MyFormScholar/></div>
+        <h4 className="title mt-3">Master Solution</h4>
+          <div className="p-3 border rounded"><MyFormMaster/></div>
       </div>
     );
   }
