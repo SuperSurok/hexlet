@@ -10,6 +10,7 @@ import IndexState from "./state/index";
 import Carousel from "./events/Carousel";
 import AProgramming from "./automatic_programming/Collapse";
 import Forms from "./forms/Forms";
+import Immutability from "./state_immutability/Immutability";
 
 class App extends React.Component {
   render() {
@@ -49,6 +50,7 @@ class App extends React.Component {
         <Carousel />
         <AProgramming />
         <Forms/>
+        <Immutability />
       </div>
     );
   }
