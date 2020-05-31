@@ -26,7 +26,7 @@ definitions = [
 }
 
 ///////////////////////////////////////////////////
-///////////////// Second Solution //////////////////
+///////////////// Second Solution /////////////////
 ///////////////////////////////////////////////////
 {
     const buildDefinitionsList = (arr) => {
@@ -41,6 +41,22 @@ definitions = [
         return `<dl>${inner}</dl>`;
     };
     buildDefinitionsList(definitions);
+}
+
+///////////////////////////////////////////////////
+///////////////// Third Solution //////////////////
+///////////////////////////////////////////////////
+{
+    const buildDefinitionList = (list) => {
+        if (!list.length) return '';
+        const listDefinitions = [];
+        for (const item of list) {
+            listDefinitions.push(`<dt>${item[0]}</dt><dd>${item[1]}</dd>`);
+        }
+        const joinDefinitions = listDefinitions.join('');
+        const resultList = `<dl>${joinDefinitions}</dl>`;
+        return resultList;
+    };
 }
 
 ///////////////////////////////////////////////////
