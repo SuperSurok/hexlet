@@ -18,6 +18,30 @@
 }
 
 ////////////////////////////////////////
+//////// Second Solution ///////////////
+////////////////////////////////////////
+{
+    const countUniqChars = (str) => {
+        const arrStr = str.split('');
+        const count = [];
+        for (const item of arrStr) {
+            for (const char of item) {
+                count.push(char.toLowerCase());
+            }
+        }
+        const result = [...new Set(count)];
+        return result.length;
+    };
+}
+
+////////////////////////////////////////
+//////// Second Solution ///////////////
+////////////////////////////////////////
+{
+    const countUniqChars = (str) => [...new Set(str)].length;
+}
+
+////////////////////////////////////////
 //////// Master Solution ///////////////
 ////////////////////////////////////////
 
