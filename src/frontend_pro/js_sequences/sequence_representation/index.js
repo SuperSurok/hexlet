@@ -11,7 +11,7 @@ export const has = (list, num) => {
     return (head(a) !== num) ? has(tail(a), num) : head(a) === num;
 };
 
-export const reverse = (list) => {  // this function coming soon
+export const reverse = (list) => {  // constructor function coming soon
     const a = listToString(list);
     let b = l();
     for (let i = 1; i < a.length - 1; i += 1) {
