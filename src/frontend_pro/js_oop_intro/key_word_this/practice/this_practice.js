@@ -27,6 +27,33 @@
 }
 
 //////////////////////////////////////////////////////
+///////////////// Second Solution ////////////////////
+//////////////////////////////////////////////////////
+{
+    function make(numer, denom) {
+        return {
+            numer,
+            denom,
+            getNumer() {
+                return this.numer;
+            },
+            getDenom() {
+                return this.denom;
+            },
+            toString() {
+                return (`${this.numer}/${this.denom}`);
+            },
+            add(sum) {
+                const obj = {
+                    num: this.numer * this.getDenom.call(sum) + this.denom * this.getNumer.call(sum),
+                    denom: this.denom * this.getDenom.call(sum),
+                };
+                return make(obj.num, obj.denom);
+            },
+        };
+    }
+}
+//////////////////////////////////////////////////////
 ///////////////// Master Solution ////////////////////
 //////////////////////////////////////////////////////
 {
