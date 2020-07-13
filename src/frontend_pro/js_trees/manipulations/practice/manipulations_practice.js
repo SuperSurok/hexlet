@@ -27,20 +27,35 @@ export const compressImages = (tree) => {
 //////////////////////////////////////////////////////
 ///////////////// Master Solution ////////////////////
 //////////////////////////////////////////////////////
-{
-    export const compressImages = (node) => {
-        const children = getChildren(node);
-        const newChildren = children.map((child) => {
-            const name = getName(child);
-            if (!isFile(child) || !name.endsWith('.jpg')) {
-                return child;
-            }
-            const meta = getMeta(child);
-            const newMeta = _.cloneDeep(meta);
-            newMeta.size /= 2;
-            return mkfile(name, newMeta);
-        });
-        const newMeta = _.cloneDeep(getMeta(node));
-        return mkdir(getName(node), newChildren, newMeta);
-    };
-}
+export const compressImages_2 = (tree) => {
+    const children = getChildren(tree);
+    const newChildren = children.map((child) => {
+        const name = getName(child);
+        if (!isFile(child) || !name.endsWith('.jpg')) {
+            return child;
+        }
+        const newMeta = _.cloneDeep(getMeta(child));
+        newMeta.size /= 2;
+        return mkfile(name, newMeta);
+    })
+    const newMeta = _.cloneDeep(getMeta(tree));
+    return mkdir(getName(tree), newChildren, newMeta);
+};
+//////////////////////////////////////////////////////
+///////////////// Master Solution ////////////////////
+//////////////////////////////////////////////////////
+export const compressImages_master = (node) => {
+    const children = getChildren(node);
+    const newChildren = children.map((child) => {
+        const name = getName(child);
+        if (!isFile(child) || !name.endsWith('.jpg')) {
+            return child;
+        }
+        const meta = getMeta(child);
+        const newMeta = _.cloneDeep(meta);
+        newMeta.size /= 2;
+        return mkfile(name, newMeta);
+    });
+    const newMeta = _.cloneDeep(getMeta(node));
+    return mkdir(getName(node), newChildren, newMeta);
+};
