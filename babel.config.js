@@ -7,6 +7,13 @@ module.exports = {
                 chrome: '67',
                 safari: '11.1',
             },
-        }],
+        },
+        'jest'
+        ],
     ],
+    env: {
+        test: {
+            plugins: ['@babel/plugin-transform-modules-commonjs']
+        }
+    }
 };
