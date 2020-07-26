@@ -12,6 +12,7 @@ import AProgramming from "./automatic_programming/Collapse";
 import Forms from "./forms/Forms";
 import Immutability from "./state_immutability/Immutability";
 import NestedComponents from "./nested-components/NestedComponents";
+import FunctionalComponents from "./functional_components/FuncttionalComponents";
 
 class App extends React.Component {
     render() {
@@ -53,6 +54,7 @@ class App extends React.Component {
                 <Forms/>
                 <Immutability/>
                 <NestedComponents/>
+                <FunctionalComponents/>
             </div>
         );
     }
