@@ -45,6 +45,23 @@
 }
 
 //////////////////////////////////////////////////////
+///////////////// Fourth Solution ////////////////////
+//////////////////////////////////////////////////////
+{
+    export const getMutualFriends = (user1, user2) => {
+        const list1 = user1.getFriends();
+        const list2 = user2.getFriends().map(friend => friend.id);
+        const result = [];
+        list1.map((friend) => {
+            if (list2.includes(friend.id)) {
+                return result.push(friend);
+            }
+        });
+        return result;
+    };
+}
+
+//////////////////////////////////////////////////////
 ///////////////// Master Solution ////////////////////
 //////////////////////////////////////////////////////
 export const getMutualFriends = (userData1, userData2) => {
