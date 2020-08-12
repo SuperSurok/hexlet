@@ -13,6 +13,7 @@ import Forms from "./forms/Forms";
 import Immutability from "./state_immutability/Immutability";
 import NestedComponents from "./nested-components/NestedComponents";
 import FunctionalComponents from "./functional_components/FuncttionalComponents";
+import VirtualDom from "./virtual_dom/practice/VirtualDom";
 
 class App extends React.Component {
     render() {
@@ -55,6 +56,7 @@ class App extends React.Component {
                 <Immutability/>
                 <NestedComponents/>
                 <FunctionalComponents/>
+                <VirtualDom/>
             </div>
         );
     }
