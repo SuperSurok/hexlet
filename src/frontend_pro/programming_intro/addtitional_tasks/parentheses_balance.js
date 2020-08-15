@@ -23,6 +23,26 @@
 }
 
 ////////////////////////////////////////
+//////// Second Solution ///////////////
+////////////////////////////////////////
+{
+    const apply = (str) => {
+        let result = 0;
+        const brackets = ['(', ')'];
+        for (let i = 0; i < str.length; i += 1) {
+            if (str[i] === brackets[0]) {
+                result += 1;
+            }
+            if (str[i] === brackets[1]) {
+                if (result === 0) return false;
+                result -= 1;
+            }
+        }
+        return result === 0;
+    };
+}
+
+////////////////////////////////////////
 //////// Master Solution ///////////////
 ////////////////////////////////////////
 {
