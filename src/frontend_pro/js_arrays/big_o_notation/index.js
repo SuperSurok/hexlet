@@ -13,6 +13,23 @@
         }
         return result;
     };
+    console.log(`First solution: ${getIntersectionOfSortedArray([10, 11, 24], [10, 13, 14, 18, 24, 30])}`); // [10, 24]
+}
+
+////////////////////////////////////////
+//////// Second Solution ///////////////
+////////////////////////////////////////
+{
+    const getIntersectionOfSortedArray = (arr1, arr2) => {
+        const result = [];
+        for (const item of arr1) {
+            if (arr2.includes(item)) {
+                result.push(item);
+            }
+        }
+        return result;
+    };
+    console.log(`First solution: ${getIntersectionOfSortedArray([10, 11, 24], [10, 13, 14, 18, 24, 30])}`); // [10, 24]
 }
 
 ////////////////////////////////////////
@@ -39,5 +56,6 @@
             }
         }
         return result;
-    }
+    };
+    console.log(`Master solution: ${getIntersectionOfSortedArray([10, 11, 24], [10, 13, 14, 18, 24, 30])}`); // [10, 24]
 }

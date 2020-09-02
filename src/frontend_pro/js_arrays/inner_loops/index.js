@@ -1,3 +1,4 @@
+const {_} = require('lodash')
 
 ////////////////////////////////////////
 //////// First Solution ////////////////
@@ -22,22 +23,45 @@
     };
 }
 
+////////////////////////////////////////
+//////// Second Solution ////////////////
+////////////////////////////////////////
+{
+    const getSameCount = (arr1, arr2) => {
+        if (arr1.length === 0 || arr2.length === 0) return 0;
+
+        const dataOne = _.uniq(arr1);
+        const dataTwo = _.uniq(arr2);
+        const resultData = [];
+
+        for (const itemOne of dataOne) {
+            for (const itemTwo of dataTwo) {
+                if (typeof itemTwo === 'string') return 0;
+                if (itemOne === itemTwo) {
+                    resultData.push(itemOne);
+                }
+            }
+        }
+
+        return resultData.length;
+    };
+}
 
 ////////////////////////////////////////
 //////// Master Solution ///////////////
 ////////////////////////////////////////
 const getSameCount = (coll1, coll2) => {
-  let count = 0;
-  const uniqColl1 = uniq(coll1);
-  const uniqColl2 = uniq(coll2);
+    let count = 0;
+    const uniqColl1 = _.uniq(coll1);
+    const uniqColl2 = _.uniq(coll2);
 
-  for (const item1 of uniqColl1) {
-    for (const item2 of uniqColl2) {
-      if (item1 === item2) {
-        count += 1;
-      }
+    for (const item1 of uniqColl1) {
+        for (const item2 of uniqColl2) {
+            if (item1 === item2) {
+                count += 1;
+            }
+        }
     }
-  }
 
-  return count;
+    return count;
 };
