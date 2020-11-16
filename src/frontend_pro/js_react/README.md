@@ -66,3 +66,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Docker:
+Создать докер образ: (docker build -t <name of docker container> .)
+Посмотреть докер образы: (docker images)
+Запуск докер контейнера: (docker run <imageID | image name>)
+Запуск докер контейнера: (docker run  --name <name> <imageID | image name>)
+Запуск докер контейнера в фоне: (docker run  --name <name> -d <imageID | image name>)
+Запуск докер контейнера в фоне и удаление после остановки: (docker run  --name <name> -d --rm <imageID | image name>)
+Посмотреть запущенные контейнеры: (docker ps)
+Посмотреть все контейнеры: (docker ps -a)
+Посмотреть ID контейнеров: (docker ps -a -q)
+Удалить образ: (docker rm imageID)
+Удалить все контейнеры: (docker rm $(docker ps -qa))
+Удалить все остановленные контейнеры и неиспользуемые образы: docker system prune -a
+Остановить контейнер: (docker stop <containerID | container name>)
+Удалить контейнер: (docker rm containerID)
