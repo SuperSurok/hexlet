@@ -12,7 +12,7 @@ Postgresql
 * psql postgres - подключится к базе данных
 * sudo -u <name> psql - подключится к базе данных через psql из под пользователя с именем <name>
 * sudo -u postgres createuser —create <user name> - —createdb  добавляет возможность создавать базы данных. По умолчанию этой возможности нет.
-* createdb <db name> - создать базу данных
+* ```createdb <db name>``` - создать базу данных
 * psql -l - посмотреть список баз данных
 * dropdb <db name> - удалить базу данных
 * \? - полный список команд внути psql
