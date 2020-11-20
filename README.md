@@ -23,7 +23,8 @@ Postgresql
 * ```\d <tablename>``` - посмотреть структуру таблицы
 
 ### Запросы
-* CREATE TABLE - создать таблицу
+* ```CREATE TABLE <table name>``` - создать таблицу
+* ```DROP TABLE <table name>``` - удалить таблицу
 ##### Пример:
 ```sql
 CREATE TABLE courses (
