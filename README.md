@@ -6,20 +6,21 @@
 Postgresql
 =============
 ### Основные команды
-* whoami - узнать под каким именем пользователя выполнен вход
-* brew install postgresql - установить postgresql
-* brew services start postgresql - запуск postresql
-* psql postgres - подключится к базе данных
-* sudo -u <name> psql - подключится к базе данных через psql из под пользователя с именем <name>
-* sudo -u postgres createuser —create <user name> - —createdb  добавляет возможность создавать базы данных. По умолчанию этой возможности нет.
+* ```whoami``` - узнать под каким именем пользователя выполнен вход
+* ```brew install postgresql``` - установить postgresql
+* ```brew services start postgresql``` - запуск postresql
+* ```psql postgres``` - подключится к базе данных
+* ```psql -l``` - посмотреть список баз данных
+* ```sudo -u <name> psql``` - подключится к базе данных через psql из под пользователя с именем <name>
+* ```sudo -u postgres createuser —create <user name> --createdb```  добавляет возможность создавать базы данных. По умолчанию этой возможности нет.
 * ```createdb <db name>``` - создать базу данных
-* psql -l - посмотреть список баз данных
-* dropdb <db name> - удалить базу данных
-* \? - полный список команд внути psql
+* ```dropdb <db name>``` - удалить базу данных
 * [cоздание ролей](https://postgrespro.ru/docs/postgrespro/11/database-roles) - подсказка, роли базы данных
-* \du - список ролей
-* \l - список баз
-* [pgAdmin](https://www.postgresqltutorial.com/connect-to-postgresql-database/) - подскзака, как подключится к базе через pgAdmin
+* [pgAdmin](https://www.postgresqltutorial.com/connect-to-postgresql-database/) - подскзака, как подключиться к базе через pgAdmin
+* ```\?``` - полный список команд внути psql
+* ```\du``` - список ролей
+* ```\l``` - список баз
+* ```\d <tablename>``` - посмотреть структуру таблицы
 
 ### Запросы
 * CREATE TABLE - создать таблицу
