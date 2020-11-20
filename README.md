@@ -45,3 +45,4 @@ CREATE TABLE course_members (
   created_at timestamp
 );
 ```
+**[⬆ оглавление](#подсказки)**
