@@ -1,0 +1,21 @@
+//////////////////////////////////////////////////////
+///////////////// First Solution /////////////////////
+//////////////////////////////////////////////////////
+const flatten = (arr) => {
+  return arr.reduce(
+    (acc, cur) =>
+      Array.isArray(cur) ? acc.push(...flatten(cur)) : acc.push(cur),
+    []
+  );
+};
+
+//////////////////////////////////////////////////////
+///////////////// Master Solution ////////////////////
+//////////////////////////////////////////////////////
+const flattenMaster = (list) =>
+  list.reduce((acc, element) => {
+    const result = Array.isArray(element)
+      ? [...acc, ...flatten(element)]
+      : [...acc, element];
+    return result;
+  }, []);
