@@ -1,4 +1,4 @@
-import Cart from '../class/practice/class_practice'
+import Cart from '../lessons/class/practice/class_practice'
 
 test('Cart', () => {
     const cart = new Cart();
