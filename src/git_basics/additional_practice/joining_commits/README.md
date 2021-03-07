@@ -3,7 +3,7 @@
 Измените комментарий коммита "fix something" на "fix README.md".
 
 #### Решение
-```git rebase -i HEAD~2```
+```git rebase -i HEAD~10```
 
 ```
 pick fa0bd86 add notes about cooking
