@@ -3,14 +3,13 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "react-app"
-  ],
+  "extends": ["eslint:recommended", "react-app"],
   "parserOptions": {
     "ecmaVersion": 11,
     "sourceType": "module"
   },
   "rules": {
+    "quotes": ["error", "single"],
+    "spaced-comment": [0, "allways"]
   }
 }

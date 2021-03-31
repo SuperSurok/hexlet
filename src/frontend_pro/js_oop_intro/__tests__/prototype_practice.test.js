@@ -1,4 +1,4 @@
-import Money from "../lessons/prototype/practice/prototype_practice";
+import Money from "../prototype/practice/prototype_practice";
 test('prototype', () => {
   const money1 = new Money(100); // доллар
   expect(money1.getValue()).toBe(100);
