@@ -30,6 +30,9 @@ const unionFiles = (inputPath1, inputPath2, outputPath, cb) => {
   );
 };
 
+/// /////////////////////////////////////
+/// ///// Master Solution ///////////////
+/// /////////////////////////////////////
 const unionFilesMaster = (inputPath1, inputPath2, outputPath, cb) => {
   waterfall(
     [
