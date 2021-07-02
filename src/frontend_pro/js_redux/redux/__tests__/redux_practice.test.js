@@ -1,5 +1,5 @@
-import generateStore from "../practice/redux_practice.js";
-import { addTask, removeTask } from "../practice/actions.js";
+import generateStore from "../practice/redux_practice.ts";
+import { addTask, removeTask } from "../practice/actions.ts";
 
 test("Store 1", () => {
   const store = generateStore();
